@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Learn JavaScript</title>
+    <script>
+      // Code One
+      document.getElementById("el").style.color = "red"; //Error Because compiler not see e1
+    </script>
+    <script>
+      // Code Two
+      window.onload = function () {
+        document.getElementById("el").style.color = "red"; //Not Error Because load Bage before compiler translate
+      };
+    </script>
+  </head>
+  <body>
+    <h2 id="el">Page Title</h2>
+    <script>
+      // Code Three
+      document.getElementById("el").style.color = "red"; //Not Error and Best Bractice
+    </script>
+    <script src="main.js"></script>
+  </body>
+</html>
