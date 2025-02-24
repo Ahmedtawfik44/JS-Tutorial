@@ -23,3 +23,8 @@ let e=Math.floor(b) /Math.ceil(d);
 console.log(e.toFixed(2).toString()); // 66.67 => string 
 let m=Math.floor(b) / Math.ceil(d)
 console.log(Math.ceil(b) / Math.ceil(d)); // 67 =>number
+
+// calculate zakah
+
+let zakah=window.prompt();
+console.log(0.025 * zakah + " جنيه ")
