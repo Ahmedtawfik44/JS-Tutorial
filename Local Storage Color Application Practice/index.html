@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local-Storage-color</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      background-color: #ddd;
+      margin: 20px auto;
+      width: 400px;
+      padding: 20px;
+    }
+    ul li {
+      width: 70px;
+      height: 70px;
+      opacity: 0.4;
+    }
+    ul li:hover,
+    .active {
+      opacity: 1;
+    }
+    div {
+        width: 600px;
+        height: 300px;
+        margin: 20px auto;
+    }
+  </style>
+  <body>
+    <ul>
+      <li style="background-color: red" class="active" data-color="red"></li>
+      <li style="background-color: green" data-color="green"></li>
+      <li style="background-color: blue" data-color="blue"></li>
+      <li style="background-color: black" data-color="black"></li>
+    </ul>
+    <div style="background-color: red"></div>
+    <script src="main.js"></script>
+  </body>
+</html>
